@@ -22,7 +22,8 @@ const App = () => {
   const [unit, setUnit] = useState("C");
   const [error, setError] = useState("");
 
-  const API_KEY = "8b099807756936f0fa0a2d8e036a7b3f";
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
+
 
   //https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
 
